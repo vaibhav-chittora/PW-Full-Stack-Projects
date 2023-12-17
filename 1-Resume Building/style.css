@@ -1,0 +1,154 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main_container {
+    width: 1200px;
+    float: right;
+    border-left: 5px solid darkslateblue;
+}
+
+.about_me {
+    background-color: darkslateblue;
+    color: white;
+    /* margin: 20px 0px; */
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.work_experience {
+    margin: 20px;
+
+}
+
+.work_experience span {
+    float: right;
+
+}
+
+.job_title {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.job_achievments ul li {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.projects {
+    margin: 20px;
+
+}
+
+.project_title {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.projects span {
+    float: right;
+
+}
+
+.education {
+    margin: 20px;
+
+}
+
+.education_degree {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.education span {
+    float: right;
+}
+
+.certification {
+    margin: 20px;
+
+}
+
+.certification_achievments {
+    margin-top: 10px;
+}
+
+/* Aside section Styling starts from here */
+.aside_container {
+    background-color: darkslateblue;
+    color: white;
+    width: 310px;
+    height: 816px;
+}
+
+aside h2 {
+    color: white;
+}
+
+div img {
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+
+
+
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.skills {
+    margin: 25px 0px;
+    margin-left: 25px;
+}
+
+
+
+.skills li {
+    font-size: 15px;
+}
+
+.languages {
+    margin: 25px 0px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.languages span {
+    font-size: small;
+}
+
+.interests {
+    margin: 25px 0px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+
+/* universal selectors */
+h2 {
+    margin: 8px 0px;
+    color: darkslateblue;
+}
+
+.horizontal_bar {
+    border: 2px solid darkslateblue;
+}
+
+.h_bar {
+    margin-top: 5px;
+    width: 300px;
+    border: 2px solid white
+}
+
+.h1_bar {
+    margin-top: 3px;
+    width: 150px;
+    border: 2px solid white
+}
