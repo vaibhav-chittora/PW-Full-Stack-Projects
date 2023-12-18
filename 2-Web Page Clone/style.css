@@ -1,0 +1,201 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* height: 100vh; */
+    /* width: 100vh; */
+    background-image: url("./assets/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 25%;
+    left: 0%;
+}
+
+.left_navbar {
+    top: 25%;
+    margin-left: 80px;
+}
+
+.mid_navbar {
+    margin-left: 350px;
+    /* background-color: purple; */
+    display: block;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid white; */
+    margin: 10 px;
+    padding: 10px 20px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: rgba(249, 7, 88, 0.977);
+}
+
+/*  {
+    font-size: 25px;
+    text-decoration: underline;
+    color: rgba(249, 7, 88, 0.977);
+ border: 1px solid white;
+margin: 10 px;
+padding: 10px 20px;
+ } */
+
+
+/* .right_navbar {} */
+
+
+.right_navbar img {
+    position: absolute;
+    right: 200px;
+    margin-right: 20px;
+}
+
+
+
+.right_navbar button {
+    color: white;
+    background-color: rgba(249, 7, 88, 0.977);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+.right_navbar button:hover {
+    color: rgba(249, 7, 88, 0.977);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+
+
+/* Main section styling starts */
+.main_center {
+    font-size: 20px;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 35px;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+}
+
+.main_left {
+    width: 400px;
+    position: absolute;
+    left: 110px;
+    top: 35%;
+}
+
+.main_left p {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px 0px;
+}
+
+.main_left button {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button1 {
+    color: white;
+    background-color: rgba(249, 7, 88, 0.977);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.button1:hover {
+    color: rgba(249, 7, 88, 0.977);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.button2 {
+    color: rgba(249, 7, 88, 0.977);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.button2:hover {
+    color: white;
+    background-color: rgba(249, 7, 88, 0.977);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.right_inair {
+    font-size: 20px;
+    width: 150px;
+    position: absolute;
+    /* margin: auto; */
+    /* margin-top: 10px; */
+    right: 85px;
+    top: 320px;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 35px;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+}
+
+
+
+
+/* right portion's CSS */
+.main_right {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
+
+/* Footer styling */
+.footer {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+.footer a {
+    margin: 0px 5px;
+}
