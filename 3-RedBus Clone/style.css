@@ -1,0 +1,181 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Navbar Styling starts from here - */
+.navbar {
+    color: black;
+    display: flex;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0%;
+    height: 120px;
+}
+
+
+.left_navbar {
+    /* border: 1px solid black; */
+    margin: 30px 150px;
+    margin-right: 50px;
+}
+
+.center_navbar {
+    /* border: 1px solid black; */
+    margin-left: 45px;
+}
+
+.center_navbar ul {
+    display: flex;
+    margin: 0px 50px;
+}
+
+/* .center_navbar ul li {} */
+
+.nav_busticket {
+    background-color: #D84E55ed;
+    color: white;
+    /* border: 1px solid black; */
+    border-radius: 11%;
+    list-style: none;
+    margin: 30px 8px;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_busticket img {
+    filter: brightness(0) invert(1);
+    opacity: 100%;
+}
+
+.nav_cab_train_ticket {
+    /* background-color: #D84E55ed; */
+    color: black;
+    /* border: 1px solid black; */
+    /* border-radius: 11%; */
+    list-style: none;
+    margin: 30px 8px;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_cab_train_ticket img {
+    filter: grayscale(1) brightness(0);
+}
+
+.nav_cab_train_ticket:hover {
+    background-color: rgb(234, 231, 231);
+    color: black;
+    /* border: 1px solid black; */
+    border-radius: 11%;
+    transition: 0.8s;
+    /* transform: ; */
+    list-style: none;
+    margin: 30px 8px;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.right_navbar {
+    position: absolute;
+    right: 200px;
+    /* border: 1px solid black; */
+}
+
+.right_navbar ul {
+    display: flex;
+    margin: 20px 8px;
+    /* margin: 0px 50px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.right_navbar ul li {
+    list-style: none;
+    /* border: 1px solid grey; */
+    border-radius: 8px;
+    margin: 30px 8px;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+.right_navbar img {
+    margin: 0px 10px
+}
+
+.right_navbar ul li:hover {
+    list-style: none;
+    background-color: rgb(234, 231, 231);
+    /* border: 1px solid grey; */
+    border-radius: 8px;
+    margin: 30px 8px;
+    padding: 8px 12px;
+    transition: 0.8s;
+}
+
+/* Main styling starts here - */
+/* .main_container {} */
+
+.main_container::before {
+    content: '';
+    background: url('./Images/Homepage.png') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 225px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ticket_booking {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    padding: 40px;
+    background-color: white;
+}
+
+input {
+    /* border: none; */
+    padding: 40px;
+}
+
+.ticket_booking button {
+    font-size: 30px;
+    color: white;
+    border-radius: 15px;
+    padding: 20px 30px;
+    background-color: #D84E55ed;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .right_navbar ul li {
+        display: block;
+    }
+}
