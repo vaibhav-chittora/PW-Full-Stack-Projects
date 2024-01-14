@@ -33,6 +33,7 @@
 
 
 .left_navbar {
+    cursor: pointer;
     margin: 30px 150px;
     margin-right: 50px;
 }
@@ -581,14 +582,14 @@ h1 {
 .app_install_container>.rating_container {
     background-color: white;
     color: black;
-    width: 325px;
+    width: 350px;
     border-radius: 15px;
     padding: 20px;
     margin: 0 20px;
 
 }
 
-.rating_container>.reviews {
+.rating_container>.reviews{
     display: flex;
     margin: 8px;
     font-size: 1.2rem;
@@ -599,15 +600,16 @@ h1 {
 
 }
 
-.rating_container>.downloads {
+.rating_container>.downloads{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 250px;
     margin: 30px 10px;
     font-size: 1.2rem;
 }
 
-.rating_container>.downloads>div>p {
+.rating_container>.downloads>div>p{
     margin: 12px 0px;
 }
 
@@ -853,5 +855,6 @@ p {
 
 .copyright>div>img {
     margin: 0px 15px;
+    cursor: pointer;
 
 }
