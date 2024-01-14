@@ -3,6 +3,29 @@
 } */
 
 .mid_right{
-    justify-content: space-around;
+    /* justify-content: space-around; */
 
+}
+
+.trending_offers{
+    width: 80%;
+    left: 5%;
+    
+}
+.refer_and_earn>img{
+    width: 95%;
+    left: 5%;
+    
+}
+
+.rental_section>aside>img{
+ height: 400px;
+}
+.app_install_container{
+    width: 98%;
+}
+.primo_bus_section>.primo_bus_cards{
+    display: block;
+    width: 100%;
+    flex-direction: column;
 }
