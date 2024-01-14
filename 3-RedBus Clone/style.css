@@ -1,45 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');
+
+
 /* CSS Reset */
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    left: 18%;
-    right: 18%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    /* left: 18%;
+    right: 18%; */
+   
+    
 }
 
 /* Navbar Styling starts from here - */
+.header{
+    display: flex;
+}
 .navbar {
+    /* height: 100px; */
     color: black;
     display: flex;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    background-color: white;
     /* border-bottom: 2px solid black; */
-    position: sticky;
-    top: 0px;
-    height: 120px;
+   
 }
 
 
 .left_navbar {
-    /* border: 1px solid black; */
     margin: 30px 150px;
     margin-right: 50px;
 }
-
+.mid_right{
+    display: flex;
+    justify-content: space-between;
+    width:1300px;
+}
 .center_navbar {
-    /* border: 1px solid black; */
     margin-left: 45px;
+    /* font-size: 0.7rem; */
 }
 
 .center_navbar ul {
     display: flex;
     margin: 0px 50px;
+    cursor: pointer;
+}
+.center_navbar ul:hover{
+    display: flex;
+    margin: 0px 50px;
+    cursor: pointer;
 }
 
-/* .center_navbar ul li {} */
+.center_navbar ul li>p {
+    font-size: 15px;
+}
 
-.nav_busticket {
+.nav_busticket{
     background-color: #D84E55ed;
     color: white;
-    /* border: 1px solid black; */
     border-radius: 11%;
     list-style: none;
     margin: 30px 8px;
@@ -54,10 +77,7 @@
 }
 
 .nav_cab_train_ticket {
-    /* background-color: #D84E55ed; */
     color: black;
-    /* border: 1px solid black; */
-    /* border-radius: 11%; */
     list-style: none;
     margin: 30px 8px;
     padding: 8px 12px;
@@ -72,10 +92,8 @@
 .nav_cab_train_ticket:hover {
     background-color: rgb(234, 231, 231);
     color: black;
-    /* border: 1px solid black; */
     border-radius: 11%;
-    transition: 0.8s;
-    /* transform: ; */
+    transition: 0.5s;
     list-style: none;
     margin: 30px 8px;
     padding: 8px 12px;
@@ -85,24 +103,23 @@
 
 
 .right_navbar {
-    position: absolute;
-    right: -30%;
-    /* border: 1px solid black; */
+    /* position: absolute; */
+    /* right: 5%; */
 }
 
 .right_navbar ul {
     display: flex;
+    /* flex-direction: column; */
     margin: 20px 8px;
-    /* margin: 0px 50px; */
     align-items: center;
     justify-content: center;
 }
 
 .right_navbar ul li {
     list-style: none;
-    /* border: 1px solid grey; */
     border-radius: 8px;
     margin: 30px 8px;
+    margin-right: 100px;
     padding: 8px 12px;
     font-size: 18px;
 }
@@ -118,7 +135,8 @@
     border-radius: 8px;
     margin: 30px 8px;
     padding: 8px 12px;
-    transition: 0.8s;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 /* Main styling starts here - */
@@ -128,9 +146,12 @@
     content: '';
     background: url('./Images/Homepage.png') no-repeat center center/cover;
     position: absolute;
-    height: 70%;
+    top: 140px;
+    height: 80%;
     width: 100%;
     z-index: -1;
+    aspect-ratio:contain;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -140,7 +161,7 @@ h1 {
     font-weight: 700;
     line-height: normal;
     position: absolute;
-    top: 225px;
+    top: 40%;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -168,13 +189,13 @@ h1 {
     border-radius: 30px;
     width: 980px;
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 50%;
+    left: 18%;
+    /* right: 18%; */
+    /* margin: auto; */
+
 }
 
-/* .main_container>.ticket_booking :hover{
-
-} */
 
 .ticket_booking>div{
     display: flex;
@@ -199,9 +220,9 @@ h1 {
     max-width: 220px;
 }
 
-.ticket_booking>div>input :hover{
+.ticket_booking>div >input :hover{
     border: none;
-    /* outline: none; */
+    /* outline: white; */
     font-size: 20px;
     font-weight: 500;
     color: gray;
@@ -224,17 +245,21 @@ h1 {
 }
 
 /* Trending Offers cards Styling */
-.trending_offers {
+
+.trending_offers{
     position: absolute;
-    top: 75%;
-    left: 15%;
-    box-sizing: border-box;
+    top: 90%;
+    left: 13%;
+    /* box-sizing: border-box; */
     /* display: flex; */
     background-color: white;
-    width: 1100px;
-    height: 250px;
+   max-width: 1300px;
+    /* height: 330px; */
     padding: 20px;
     border-radius: 30px;
+    overflow-y: hidden;
+    /* overflow-x: scroll; */
+    /* box-shadow: 0px 3px 15px rgba(113, 115,119 , 1); */
 }
 
 .trending_offers>.trend_heading{
@@ -253,15 +278,17 @@ h1 {
     font-size: 20px;
 }
 
-.trending_offers > .cards_section{
+.main>.trending_offers >.cards_section{
     display: flex; 
-    overflow: auto;  
+    overflow: auto;
+   max-width: 1100px;  
     
 }
 
 .trending_offers>.cards_section >.card1{
     background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%);
     color: white;
+    min-width: 300px;
     display: flex;
     padding: 10px 30px;
     border-radius: 20px;
@@ -280,7 +307,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 .trending_offers>.cards_section >.card3{
@@ -293,7 +320,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 .trending_offers>.cards_section >.card4{
@@ -306,7 +333,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 .trending_offers>.cards_section >.card5{
@@ -319,7 +346,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 .trending_offers>.cards_section >.card6{
@@ -332,7 +359,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 .trending_offers>.cards_section >.card7{
@@ -345,7 +372,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 .trending_offers>.cards_section >.card8{
@@ -358,7 +385,7 @@ background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210
     margin: 5px 15px;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    min-width: 300px;
     cursor: pointer;
 }
 
@@ -416,7 +443,11 @@ margin-left: 0px 15px
 .refer_and_earn{
     position: absolute;
     top: 1000px;
-    left: 18%;
+    left: 15%;
+    margin: 80px 0px;
+}
+.refer_and_earn img{
+    width: 1100px;
 }
 .rental_section{
     display: flex;
@@ -424,19 +455,25 @@ margin-left: 0px 15px
     justify-content: center;
     position: absolute;
     top: 1200px;
-    left: 25%;
+    left: 13%;
+    margin: 7rem 0;
 }
 
 .left_rental_section>h3{
     font-size: 2.5rem;
-    font-weight: 100px;
+    font-weight:lighter;
     line-height:3.75rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
     width: 35rem;
     /* margin: 0px 20px; */
 }
+.left_rental_section>b{
+    font-weight:10rem;
+}
 .rental_heading{
     display: flex;
+    margin: 35px 0;
 }
 .rental_heading>.rentals{
 font-size: 1.2rem;
@@ -492,7 +529,10 @@ cursor: pointer;
     cursor: pointer;
 }
 .rental_section>aside>img{
-    opacity: 2.3;
+    filter: brightness(1) invert(0);
+    opacity: 1;
+    margin: 35px 0;
+    /* opacity: 1; */
 }
 
 .app_install_container{
@@ -505,6 +545,7 @@ cursor: pointer;
     padding: 25px;
     width: 1300px;
     left: 7%;
+    margin: 10rem 0;
 
 }
 
@@ -587,7 +628,8 @@ align-items: center;
 .primo_bus_section{
     position: absolute;
     top: 2400px;
-    left: 20%;
+    left: 13%;
+    margin: 13rem 0;
     
 }
 .primo_bus_section>.primo_img{
@@ -627,7 +669,11 @@ align-items: center;
 .partners{
     position:absolute;
     top: 2900px;
-    left: 15%;
+    left: 12%;
+    margin-top: 10rem;
+}
+.partners>.global_presence{
+    margin: 80px 0px;
 }
 
 .partners>h3 , .global_presence>h3{
@@ -642,47 +688,141 @@ align-items: center;
 }
 
 .partners>.diff_RTC{
+    /* position: absolute;
+    left: 12%; */
+    margin: 40px 0px;
     display: flex;
     justify-content: space-evenly;
 }
-.partners>.diff_RTC>.RTC_cards>img,p{
+.partners>.diff_RTC>.RTC_cards>img, p{
     font-size: 25px;
     /* border-radius: 50%; */
     text-align: center;
     cursor: pointer;
 }
-.partners>.diff_RTC>.RTC_cards>img,p:hover{
+.partners>.diff_RTC>:hover{
     cursor: pointer;
     font-size: 25px;
     border-radius: 15px;
     text-align: center;
-    background-color: #F0F0F0;
+    background-color: #EAE7E7;
 }
 .partners>.diff_RTC>.RTC_cards>img{
     height: 7rem;
 }
-.global_presence>.global_img{
+.global_presence{
+    /* left: 5%; */
+    margin: 10rem 0rem;
+    width: 100%;
+}
+.global_presence>.global_presence_cards{
     margin-top: 3rem;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px) {
-    .right_navbar ul li {
-        display: block;
-    }
+.global_presence_cards>.global_img>img p:hover{
+    /* margin-top: 3rem; */
+    display: flex;
+    justify-content:space-evenly;
+    cursor: pointer;
+    background-color: #EAE7E7;
 }
+.Redbus_summary{
+    /* margin: 10rem 0 ; */
+}
+
+.Redbus_summary>h2{
+    font-size: 2rem;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.Redbus_summary>.summary{
+    width: 1000px;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: light;
+    box-sizing: border-box; 
+    overflow: auto;
+    margin-top: 30px;
+}
+.footer{
+    margin: 35px 0px;
+    /* background-color: lightgrey */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_footer{
+    width: 200px;
+}
+.left_footer>p{
+    font-size: 0.9rem;
+}
+.footer>.left_footer>div img{
+    /* font-size: 1rem; */
+    margin: 10px 0px;
+}
+
+.footer>.right_footer>div>h4{
+    font-size: 1.2rem;
+    font-weight: 400px;
+}
+
+.footer>.right_footer>div>li{
+    font-size: 1rem;
+    margin: 10px 0px;
+    list-style: none
+}
+.right_footer{
+    width: 740px;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright>div{
+    font-size: 1rem
+}
+.copyright>div>img{
+    margin: 0px 15px;
+    
+}
+
+
+
+
+
+
+/* 
+
+@media screen and (max-width: 1400px){
+    .trending_offers{
+        width: 80%;
+        left: 5%;
+        
+    }
+    .refer_and_earn>img{
+        width: 95%;
+        left: 5%;
+        
+    }
+   
+    .rental_section>aside>img{
+     height: 400px;
+    }
+    .app_install_container{
+        width: 98%;
+    }
+    .primo_bus_section>.primo_bus_cards{
+        display: block;
+        width: 100%;
+        /* flex-direction: column; */
+    }
+} */
