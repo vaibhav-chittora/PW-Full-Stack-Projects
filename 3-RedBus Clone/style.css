@@ -133,10 +133,11 @@
 
 .right_navbar ul li:hover {
     list-style: none;
-    background-color: rgb(234, 231, 231);
-    /* border: 1px solid grey; */
     border-radius: 8px;
     margin: 30px 8px;
+    margin-right: 100px;
+    background-color: rgb(234, 231, 231);
+    /* border: 1px solid grey; */
     padding: 8px 12px;
     transition: 0.5s;
     cursor: pointer;
@@ -145,7 +146,7 @@
 /* Main styling starts here - */
 /* .main_container {} */
 
-.main_container::before {
+.main_container::before{
     content: '';
     background: url('./Images/Homepage.png') no-repeat center center/cover;
     position: absolute;
@@ -179,12 +180,12 @@ h1 {
     background-color: white;
 } */
 
-.ticket_booking>div>input {
+.ticket_booking>div>input{
     /* border: none; */
     padding: 40px;
 }
 
-.main_container>.ticket_booking {
+.main_container>.ticket_booking{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +201,7 @@ h1 {
 }
 
 
-.ticket_booking>div {
+.ticket_booking>div{
     display: flex;
     align-items: center;
     /* padding: 0 10px 0 10px; */
@@ -214,7 +215,7 @@ h1 {
 
 
 
-.ticket_booking>div>input {
+.ticket_booking>div>input{
     border: none;
     /* outline: none; */
     font-size: 20px;
@@ -223,7 +224,7 @@ h1 {
     max-width: 220px;
 }
 
-.ticket_booking>div>input :hover {
+.ticket_booking>div>input:hover{
     border: none;
     /* outline: white; */
     font-size: 20px;
@@ -265,7 +266,7 @@ h1 {
     /* box-shadow: 0px 3px 15px rgba(113, 115,119 , 1); */
 }
 
-.trending_offers>.trend_heading {
+.trending_offers>.trend_heading{
     display: flex;
     text-transform: uppercase;
     color: #4A4A4A;
