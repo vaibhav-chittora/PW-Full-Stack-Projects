@@ -6,28 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail Clone</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body class="">
-    <nav class="flex">
-<div class="flex">
-    <div>&#8801</div>
-    <img src="../img/gmail_logo.png" alt="">
-</div>
-<div class="flex">
-    <img src="../img/search.png" alt="">
-    <input type="text" placeholder="Search mail">
-    <img src="../img/filter.svg" alt="">
-</div>
+<body class="bg-[#F6F8FC]">
 
-<div class="flex">
-    <img src="../img/icons8-question-mark-48.png" alt="">
-    <img src="../img/icons8-settings.svg" alt="">
-    <img src="../img/al-icon.png" alt="">
-</div>
+    <!-- Navbar starts Here -->
+
+    <nav class="flex justify-between items-center h-14 py-6 px-3 mt-2">
+        <div class="flex justify-around ">
+            <div class="text-3xl mx-2 cursor-pointer">&#8801;</div>
+            <img src="../img/gmail_logo.png" class="cursor-pointer  ">
+        </div>
+        <div class="flex border rounded-full px-5 py-3">
+            <img src="../img/search.png" class="h-6 sm:m-0 sm:p-0 pl-2 ml-1 cursor-pointer">
+            <input type="text" placeholder="Search mail"
+                class=" sm:w-50 sm:p-0 sm:m-0 w-96 px-2 mx-2  leading-5 border-none outline-none bg-transparent">
+            <img src="../img/filter.png" class="h-6 ml-2 px-2 cursor-pointer">
+        </div>
+
+        <div class="flex justify-around w-40">
+            <img src="../img/question.png" class="h-7 cursor-pointer border-none rounded">
+            <img src="../img/settings.png" class="h-7 cursor-pointer border-none rounded">
+            <img src="../img/al-icon.png" class="h-7 cursor-pointer border-none rounded">
+            <img src="../img/VAIBHAV.jpg" class="h-7 cursor-pointer border-none rounded">
+        </div>
 
     </nav>
+
+
+    <!-- Sidebar Starts here -->
+
+    <div class="">
+        <div class="bg-blue-600 flex items-center border rounded-full">
+            <img src="../img/pencil.png" class="h-5 ml-2">
+            <button type="submit" class="p-5 ">Compose</button>
+        </div>
+        <div class="">
+            <a href="#" class="flex items-center justify-evenly">
+                <img src="../img/inbox.png" class="h-5 ">
+                <p>Inbox</p>
+                <p>25</p>
+            </a>
+            <a href="#" class="flex items-center justify-evenly">
+                <img src="../img/star.png" class="h-5 ">
+                <p>Starred</p>
+            </a>
+            <a href="#" class="flex items-center justify-evenly">
+                <img src="../img/clock.png" class="h-5 ">
+                <p>Snoozed</p>
+            </a>
+            <a href="#" class="flex items-center justify-evenly">
+                <img src="../img/send.png" class="h-5 ">
+                <p>Sent</p>
+            </a>
+            <a href="#" class="flex items-center justify-evenly">
+                <img src="../img/inbox.png" class="h-5 ">
+                <p>Drafts</p>
+            </a>
+            <a href="#" class="flex items-center justify-evenly">
+                <img src="../img/show-more.png" class="h-5 ">
+                <p>More</p>
+            </a>
+
+            <div class="flex items-center">
+
+                <p>Labels</p>
+                <img src="../img/plus.png" class="h-5">
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
