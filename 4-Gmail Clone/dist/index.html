@@ -33,49 +33,99 @@
 
     </nav>
 
+    <div class="flex justify-evenly">
 
-    <!-- Sidebar Starts here -->
 
-    <div class="">
-        <div class="bg-blue-600 flex items-center border rounded-full">
-            <img src="../img/pencil.png" class="h-5 ml-2">
-            <button type="submit" class="p-5 ">Compose</button>
+
+        <!-- side Bar -->
+        <div class="bg-gray-200 h-screen w-1/4 p-4">
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <img src="../img/pencil.png" class="w-6 h-6 mr-2" alt="Compose">
+                <span class="text-base font-semibold">Compose</span>
+            </a>
+
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <img src="../img/inbox.png" class="w-6 h-6 mr-2" alt="Inbox">
+                <span class="text-base font-semibold">Inbox</span>
+            </a>
+
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <img src="../img/star.png" class="w-6 h-6 mr-2" alt="Starred">
+                <span class="text-base font-semibold">Starred</span>
+            </a>
+
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <img src="../img/clock.png" class="w-6 h-6 mr-2" alt="Snoozed">
+                <span class="text-base font-semibold">Snoozed</span>
+            </a>
+
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <img src="../img/send.png" class="w-6 h-6 mr-2" alt="Sent">
+                <span class="text-base font-semibold">Sent</span>
+            </a>
+
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <img src="../img/show-more.png" class="w-6 h-6 mr-2" alt="More">
+                <span class="text-base font-semibold">More</span>
+            </a>
+            <a href="#" class="flex items-center mb-4 hover:bg-gray-300 rounded-lg p-2">
+                <span class="text-base font-semibold">Labels</span>
+                <img src="../img/plus.png" class="w-3 h-3 mr-2" alt="More">
+            </a>
+
         </div>
-        <div class="">
-            <a href="#" class="flex items-center justify-evenly">
-                <img src="../img/inbox.png" class="h-5 ">
-                <p>Inbox</p>
-                <p>25</p>
-            </a>
-            <a href="#" class="flex items-center justify-evenly">
-                <img src="../img/star.png" class="h-5 ">
-                <p>Starred</p>
-            </a>
-            <a href="#" class="flex items-center justify-evenly">
-                <img src="../img/clock.png" class="h-5 ">
-                <p>Snoozed</p>
-            </a>
-            <a href="#" class="flex items-center justify-evenly">
-                <img src="../img/send.png" class="h-5 ">
-                <p>Sent</p>
-            </a>
-            <a href="#" class="flex items-center justify-evenly">
-                <img src="../img/inbox.png" class="h-5 ">
-                <p>Drafts</p>
-            </a>
-            <a href="#" class="flex items-center justify-evenly">
-                <img src="../img/show-more.png" class="h-5 ">
-                <p>More</p>
-            </a>
 
-            <div class="flex items-center">
-
-                <p>Labels</p>
-                <img src="../img/plus.png" class="h-5">
+        <!-- Main Page -->
+ 
+        <div class="flex flex-col w-full ml-10">
+            <!-- Top Navigation -->
+            <nav class="flex justify-between items-center h-14 py-6 px-3">
+                <!-- Your existing top navigation content here -->
+            </nav>
+    
+            <!-- Emails Section -->
+            <div class="flex flex-col">
+                <!-- Email 1 -->
+                <div class="flex items-center justify-between px-4 py-2 border-b border-gray-200">
+                    <div class="flex items-center">
+                        <!-- Email Avatar -->
+                        <img src="../img/email-avatar-1.png" class="w-10 h-10 rounded-full mr-4" alt="Email Avatar">
+                        <!-- Email Details -->
+                        <div>
+                            <div class="font-semibold">Sender Name</div>
+                            <div class="text-sm text-gray-500">Subject</div>
+                        </div>
+                    </div>
+                    <!-- Time Sent -->
+                    <div class="text-sm text-gray-500">2h ago</div>
+                </div>
+    
+                <!-- Email 2 -->
+                <div class="flex items-center justify-between px-4 py-2 border-b border-gray-200">
+                    <div class="flex items-center">
+                        <!-- Email Avatar -->
+                        <img src="../img/email-avatar-2.png" class="w-10 h-10 rounded-full mr-4" alt="Email Avatar">
+                        <!-- Email Details -->
+                        <div>
+                            <div class="font-semibold">Sender Name</div>
+                            <div class="text-sm text-gray-500">Subject</div>
+                        </div>
+                    </div>
+                    <!-- Time Sent -->
+                    <div class="text-sm text-gray-500">4h ago</div>
+                </div>
+    
+                <!-- Additional Emails -->
+                <!-- Add more email entries as needed -->
             </div>
         </div>
-
     </div>
+
+
+
+
+
+
 </body>
 
 </html>
