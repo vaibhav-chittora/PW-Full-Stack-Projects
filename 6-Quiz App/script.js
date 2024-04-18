@@ -1,23 +1,5 @@
 const questions = [
-    {
-        question: 'What is the correct syntax of doctype in HTML5?',
-        answers: [
-            { text: '</doctype html>', correct: false },
-            { text: '<doctype html>', correct: false },
-            { text: '<doctype html!>', correct: false },
-            { text: '<!doctype html>', correct: true },
-        ]
-    },
-
-    {
-        question: 'Which of the following tag is used for inserting the largest heading in HTML?',
-        answers: [
-            { text: 'head', correct: false },
-            { text: '<h1>', correct: true },
-            { text: '<h6>', correct: false },
-            { text: 'heading', correct: false },
-        ]
-    },
+   
 
     {
         question: ' Which element is used for or styling HTML5 layout?',
@@ -32,20 +14,38 @@ const questions = [
     {
         question: ' Among the following, which is the HTML paragraph tag?',
         answers: [
-            { text: '<p>', correct: true },
-            { text: '<pre>', correct: false },
-            { text: '<hr>', correct: false },
-            { text: '<a>', correct: false },
+            { text: 'p', correct: true },
+            { text: 'pre', correct: false },
+            { text: 'hr', correct: false },
+            { text: 'a', correct: false },
+        ]
+    },
+    {
+        question: 'The full form of CSS is:',
+        answers: [
+            { text: 'Colored Special Sheets', correct: false },
+            { text: 'color sheet styles', correct: false },
+            { text: 'Cascading Style Sheets', correct: true },
+            { text: 'None', correct: false },
         ]
     },
 
     {
         question: ' Which tag is used to create a numbered list in HTML?',
         answers: [
-            { text: '<ol>', correct: true },
-            { text: '<ul>', correct: false },
-            { text: '<li>', correct: false },
+            { text: 'ul', correct: false },
+            { text: 'ol', correct: true },
+            { text: 'li', correct: false },
             { text: 'None Of these', correct: false },
+        ]
+    },
+    {
+        question: ' What is the default display property for a div element in CSS?',
+        answers: [
+            { text: 'block', correct: true },
+            { text: 'inline-block', correct: false },
+            { text: 'inline', correct: false },
+            { text: 'flex', correct: false },
         ]
     }
 
@@ -62,7 +62,7 @@ let score = 0;
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next"
+    nextButton.innerHTML = 'Next'
     showQuestion();
 
 }
@@ -98,9 +98,10 @@ function resetState() {
     }
 }
 
-function selectAnswer() {
+function selectAnswer(e) {
 
     const selectedBtn = e.target;
+    
     const isCorrect = selectedBtn.dataset.correct === 'true';
     if (isCorrect) {
         selectedBtn.classList.add('correct');
